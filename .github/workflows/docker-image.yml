@@ -29,7 +29,7 @@ jobs:
           context: ./TRAINAPI-SPRINGBOOT 
           file: ./TRAINAPI-SPRINGBOOT/backend.Dockerfile 
           push: true 
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/tradocker-backend:latest 
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/traindocker-backend:latest 
  
       - name: Build and push frontend image 
         uses: docker/build-push-action@v5 
@@ -37,4 +37,4 @@ jobs:
           context: ./trainapi-react 
           file: ./trainapi-react/frontend.Dockerfile 
           push: true 
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/tradocker-frontend:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/traindocker-frontend:latest
