@@ -1,0 +1,3 @@
+spring.application.name=TRAINAPI-SPRINGBOOT
+server.port=1993  
+
